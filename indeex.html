@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meanwood Mission District | Adventist Youth Ministry</title>
+    <style>
+        :root { --primary: #2c3e50; --accent: #e67e22; --light: #f4f4f4; }
+        body { font-family: 'Segoe UI', sans-serif; margin: 0; color: #333; line-height: 1.6; }
+        .logo img {
+            height: 45px;
+            width: auto;
+            display: block;
+
+        }
+        /* Navigation */
+        nav { display: flex; justify-content: space-between; padding: 20px 8%; background: white; align-items: center; position: sticky; top: 0; z-index: 1000; box-shadow: 0 2px 10px rgba(0,0,0,0.1); }
+        .logo { font-weight: 800; color: var(--primary); font-size: 1.2rem; text-transform: uppercase; }
+        nav ul { display: flex; list-style: none; }
+        nav ul li { margin-left: 25px; }
+        nav ul li a { text-decoration: none; color: var(--primary); font-weight: 600; transition: 0.3s; }
+        nav ul li a:hover { color: var(--accent); }
+
+        /* Slider */
+        .slider { height: 500px; position: relative; overflow: hidden; }
+        .slide { position: absolute; width: 100%; height: 100%; opacity: 0; transition: 1s ease-in-out; }
+        .slide.active { opacity: 1; }
+        .slide img { width: 100%; height: 100%; object-fit: cover; }
+        .caption { position: absolute; bottom: 50px; left: 10%; color: white; background: rgba(0,0,0,0.5); padding: 20px; }
+
+        /* Sections */
+        section { padding: 80px 8%; }
+        .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 30px; margin-top: 40px; }
+        .card { background: white; padding: 20px; border-radius: 10px; box-shadow: 0 5px 15px rgba(0,0,0,0.1); transition: 0.3s; }
+        .card:hover { transform: translateY(-10px); }
+
+        /* Forms */
+        form { background: var(--light); padding: 30px; border-radius: 10px; }
+        input, textarea { width: 100%; padding: 10px; margin: 10px 0; border: 1px solid #ccc; }
+        button { background: var(--accent); color: white; border: none; padding: 10px 20px; cursor: pointer; }
+        footer { background: var(--primary); color: white; text-align: center; padding: 40px; }
+        /* MG Section */
+        .mg-section { background: var(--primary); color: white; text-align: center; }
+        footer { background: #1a1a1a; color: white; text-align: center; padding: 30px; }
+        .btn-outline {
+            border: 2px solid;
+            cursor: pointer;
+            border-radius: 12px;
+        }
+        .buttun :hover{
+
+            margin-top: 20%;
+            cursor: pointer;
+            border-radius: 2%;
+        }
+    </style>
+</head>
+<body>
+
+    <nav class="navbar">
+        <div class="logo">
+            <img src="images/logo.jpg">
+        </div>
+        <div class="logo">MEANWOOD MISSION DISTRICT ADVENTIST YOUTH MINISTRY</div>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#updates">Updates</a></li>
+            <li><a href="library.html">Library</a></li>
+            <li><a href="https://www.gcyouthministries.org/events-and-projects/">events</a></li>
+             <li><a href="excutive.html">excutive</a></li>
+        </ul>
+    </nav>
+
+    <div class="slider" id="home">
+        <div class="slide"><img src="images/ambas 2.jpg"><div class="caption"><h2>SERVING GOD AND THE COMMUNITY</h2></div></div>
+        <div class="slide"><img src="images/excutive.jpg"><div class="caption"><h2>LEADERS</h2></div></div>
+        <div class="slide"><img src="images/lucy.jpg"><div class="caption"><h2>MGS</h2></div></div>
+        <div class="slide"><img src="images/path 3.jpg"><div class="caption"><h2>PATHFINDERS</h2></div></div>
+        <div class="slide"><img src="images/adventures.jpg"><div class="caption"><h2>ADVENTURES</h2></div></div>
+    </div>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Our Clubs</title>
+
+<style>
+body{
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 30px;
+    background: #f5f5f5;
+}
+
+/* Container */
+.clubs-container{
+    display: flex;
+    justify-content: left;
+    align-items: left;
+    gap: 40px;
+}
+
+/* Left Side */
+.clubs{
+    flex: 150px;
+    justify-content: center;
+    text-align: justify;
+    width: 150px;
+}
+
+.clubs h2{
+    color: #0056b3;
+    text-align: center;
+    width: ;
+}
+
+.club-list{
+    list-style: none;
+    padding: 0;
+}
+
+.club-list li{
+    margin: 10px 0;
+}
+
+.club-list a{
+    display: block;
+    padding: 12px 15px;
+    text-decoration: none;
+    color: #333;
+    background: #fff;
+    border-left: 5px solid #132538;
+    border-radius: 6px;
+    transition: .3s;
+}
+
+.club-list a:hover{
+    background: #263a50;
+    color: white;
+    transform: translateX(5px);
+}
+
+/* Right Side */
+.image-box{
+    flex: 1;
+    text-align: left;
+}
+
+.image-box img{
+    width: 100%;
+    max-width: 450px;
+    border-radius: 12px;
+    box-shadow: 0 5px 15px rgba(0,0,0,.2);
+}
+.ministry{
+    background: white; padding: 10px; border-radius: 10px; box-shadow: 0 5px 15px rgba(0,0,0,0.1); transition: 0.3s;
+    width: 500%;
+
+}
+.ministry{
+    display:grid;
+    align-items: left;
+    margin-top: 5%;
+}
+
+.ministry-container {
+    width: 200px;
+    flex-shrink: 0;
+    margin-right: 1opx;
+    margin-top: 2%;
+    float: left;
+}
+
+.ministry-container img{
+    width: 450%;
+    height: 450px;
+    display: block;
+    float: left;
+}
+.ministry:hover{
+    transform: translateY(-10px);
+}
+</style>
+
+</head>
+<body>
+
+<div class="clubs-container">
+
+    <!-- LEFT -->
+
+        <div class="ministry">
+    <div class="ministry-container">
+        <img src="images/adventist youth ministry.png"
+    </div>
+
+    
+</div>
+
+        <ul class="club-list">
+            <li><a href="https://www.gcyouthministries.org/ministries/adventurers/">🌈 Adventurers Club</a></li>
+            <li><a href="https://www.gcyouthministries.org/ministries/pathfinders/">⛺ Pathfinders Club</a></li>
+            <li><a href="https://www.gcyouthministries.org/ministries/ambassadors/">🤝 Ambassadors Club</a></li>
+            <li><a href="https://www.gcyouthministries.org/ministries/young-adults/">🎓 Young Adults Ministry</a></li>
+            <li><a href="https://www.gcyouthministries.org/ministries/public-campus-ministries/ ">🏫 Public Campus Ministries</a></li>
+    
+        </ul>
+    </div>
+
+    <!-- RIGHT -->
+    <div class="image-box">
+        <img src="images/ANNETTY.jpg" alt="Adventist Youth Ministries">
+    </div>
+
+</div>
+
+</body>
+</html>
+    <section id="updates">
+        <h2>Latest Ministry Updates</h2>
+        <div class="grid">
+            <div class="card"><IMG src="images/sabath logo.jpg.webp">
+            <h3>Sabbath School Special</h3><p>Join us this Saturday for a life-changing study session.</p></div>
+            <div class="card"><img src="images/comunity logo.webp">
+            <h3>Community Outreach</h3><p>We are visiting the local center to share love and hope.</p></div>
+            <div class="card"><img src="images/revival logo.webp">
+            <h3>Youth Revival</h3><p>A weekend of music, prayer, and deep spiritual growth.</p></div>
+        </div>
+    </section>
+
+    <section id="library" style="background: #f9f9f9;">
+        <h2>Productive Youth Library</h2>
+        <div class="grid">
+            <div class="card"><img src="images/steps to christ.webp"><h3>Steps to Christ</h3><p>Discover the path to a closer walk with Jesus.</p></div>
+            <div class="card"><img src="images/desire of ages.webp"><h3>The Desire of Ages</h3><p>Understanding the life of our Savior.</p></div>
+            <div class="card"><img src="images/faith.webp"><h3>Youth Productivity Guide</h3><p>Tips for balancing work, life, and faith.</p></div>
+      <a href="library.html"> <button
+    style="background-color:#142731; color:white; padding:12px 24px; border:none; border-radius:6px; font-size:16px; cursor:pointer; transition:0.3s; margin-bottom: 20%;"
+    onmouseover="this.style.backgroundColor='#142731'"
+    onmouseout="this.style.backgroundColor='#142731'">
+    explore library
+</button></a>
+        </div>
+
+
+     <section id="mg" class="mg-section">
+       <div><img src="images/master guide logo.webp"></div>
+        <h2>MasterGuide Training</h2>
+        <p>Are you ready to lead the next generation? Join our training program.</p>
+        <a href="registration form.html"><button
+    style="background-color:#e9902b; color:rgb(251, 255, 255); padding:12px 24px; border:none; border-radius:6px; font-size:16px; cursor:pointer; transition:1.3s;"
+    onmouseover="this.style.backgroundColor='#218838'"
+    onmouseout="this.style.backgroundColor='#e9902b'">
+Register for MG Training
+</button></a>
+    </section>
+     <section id="contact">
+        <h2>suggestion or complaint</h2>
+        <form>
+        <p><i>LET US KNOW HOW WE CAN HELP</i></p>
+            <button type="button" onclick="alert('OPENING EMAIL!')"><a href="mailto:meawoodmissiond@gmaill.com subject=suggestion or complaint"> email us</button>
+        </form>
+    </section>
+
+    <footer>
+         <link rel="icon" type="image/png" href="favicon.png">
+  <!-- Font Awesome for icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <style>
+    footer {
+      background-color: #222;
+      color: #fff;
+      padding: 20px;
+      text-align: center;
+    }
+
+    footer h3 {
+      margin: 0 0 10px;
+      font-size: 18px;
+    }
+
+    footer p {
+      margin: 5px 0;
+    }
+
+    footer a {
+      color: #00aced;
+      text-decoration: none;
+    }
+
+    footer a:hover {
+      text-decoration:solid;
+    }
+
+    .footer-container {
+      max-width: 800px;
+      margin: 0 auto;
+    }
+
+    .social-links {
+      margin-top: 15px;
+    }
+
+    .social-links a {
+      margin: 0 10px;
+      font-size: 22px;
+      transition: color 0.3s ease;
+    }
+
+    .social-links a.facebook { color: #3b5998; }
+    .social-links a.facebook:hover { color: #1877f2; }
+
+    .social-links a.twitter { color: #1da1f2; }
+    .social-links a.twitter:hover { color: #0d95e8; }
+
+    .social-links a.linkedin { color: #0077b5; }
+    .social-links a.linkedin:hover { color: #005582; }
+
+    .social-links a.instagram { color: #e1306c; }
+    .social-links a.instagram:hover { color: #c13584; }
+    </style>
+
+ <h3>Contact Us</h3>
+      <p>📍  Lusaka, Zambia</p>
+      <p>📞 Phone: +260 975699772</p>
+      <p>✉️ Email: <a href="mailto:meawoodmissiond@gmail.com">meawoodmissiond@gmail.com</a></p>    <div class="social-links">
+        <a href="https://www.facebook.com/share/1LJd12nMBg/?mibextid=wwXIfr" target="_blank" class="facebook" aria-label="Facebook">
+          <i class="fab fa-facebook"></i>
+        </a>
+        <a href="https://twitter.com/YourProfile" target="_blank" class="twitter" aria-label="Twitter">
+          <i class="fab fa-twitter"></i>
+        </a>
+        <a href="https://www.linkedin.com/in/YourProfile" target="_blank" class="linkedin" aria-label="LinkedIn">
+          <i class="fab fa-linkedin"></i>
+        </a>
+        <a href="https://www.instagram.com/YourProfile" target="_blank" class="instagram" aria-label="Instagram">
+          <i class="fab fa-instagram"></i>
+        </a>
+      </div>
+        <p>&copy; 2026 Meanwood Mission District | Adventist Youth Ministry</p>
+    </footer>
+
+    <script>
+        let index = 0;
+        const slides = document.querySelectorAll('.slide');
+        function rotate() {
+            slides.forEach(s => s.classList.remove('active'));
+            index = (index + 1) % slides.length;
+            slides[index].classList.add('active');
+        }
+        setInterval(rotate, 5000);
+    </script>
+</body>
+</html>
